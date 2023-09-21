@@ -1,7 +1,7 @@
 
 .navbar{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
@@ -11,12 +11,12 @@
 
 .navbarList{
     display: flex;
-    justify-content: end;
+    justify-content: space-around;
+    width: 50%;
 }
 
 .navbarList li{
     list-style: none;
-    padding: 0px 40px !important;
 }
 
 .navbarList li:hover{
