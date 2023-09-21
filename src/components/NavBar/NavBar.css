@@ -1,0 +1,37 @@
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    min-height: 10vh;
+    background-color: #E1EBD8;
+}
+
+.navbarList{
+    display: flex;
+    justify-content: end;
+}
+
+.navbarList li{
+    list-style: none;
+    padding: 0px 40px !important;
+}
+
+.navbarList li:hover{
+    font-weight: bold;
+
+}
+
+.logoNavbar{
+    width: 20%;
+    display: flex;
+    justify-content: start;
+    margin: 10px 0px !important;
+}
+
+.logoNavbar img{
+    width: 90px;
+    height: auto;
+}
