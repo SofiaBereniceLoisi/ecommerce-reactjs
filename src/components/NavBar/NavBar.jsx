@@ -1,6 +1,7 @@
 import "./NavBar.css";
 import logo from'./logo.png';
 import CartWidget from "../CartWidget/CartWidget";
+import AvatarIcon from "../Avatar/Avatar";
 
 
 const NavBar = () => {
@@ -15,6 +16,7 @@ const NavBar = () => {
                 <li>Tutoriales</li>
             </ul>
             <CartWidget/>
+            <AvatarIcon/>
         </nav>
     )
 }
