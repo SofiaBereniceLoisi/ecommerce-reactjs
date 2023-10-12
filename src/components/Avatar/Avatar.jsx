@@ -3,7 +3,7 @@ import Avatar from '@mui/material/Avatar';
 
 const AvatarIcon = () => {
     return (
-        <Avatar className="AvatarImg" src="/broken-image.jpg" sx={{ width: 26, height: 26 }}/>
+        <Avatar className="AvatarImg" sx={{ width: 26, height: 26 }}/>
     ) 
 }
 
