@@ -1,0 +1,25 @@
+/* .productos {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    padding-block: 2rem;
+    flex-wrap: wrap;
+} */
+
+/* CAMBIAR POR GRID !!!!!!!!!!!!!! */
+
+.productos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+/* @media screen and (max-width: 767px){
+    .productos{
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+} */
+

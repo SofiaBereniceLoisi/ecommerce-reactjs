@@ -6,7 +6,8 @@
     text-align: center;
     width: 100%;
     min-height: 10vh;
-    background-color: #E1EBD8;
+    background-color: #C5D6B5;
+    font-size: 1.3vw;
 }
 
 .navbarList{
@@ -21,7 +22,7 @@
 
 .navbarList li:hover{
     font-weight: bold;
-
+    cursor: pointer;
 }
 
 .logoNavbar{
@@ -34,4 +35,11 @@
 .logoNavbar img{
     width: 90px;
     height: auto;
+    transition: .5s;
+}
+
+.logoNavbar img:hover{
+    width: 86px;
+    padding: 1.9px 0px !important;
+    cursor: pointer;
 }

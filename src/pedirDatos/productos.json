@@ -1,0 +1,193 @@
+[
+    {
+        "id": 1,
+        "titulo": "Bolso Pañalera",
+        "descripcion": "Siempre debes tener a la mano algunas cosas para que tu bebé se sienta bien, una pañalera es la mejor manera de llevar contigo todo lo que necesitas y con mucho estilo. Medidas: 47cm ancho x 62cm alto x 30 cm profundo.",
+        "vistaprevia": "Bolso de crochet para llevar las cosas de tu bebé.",
+        "categoria":"Varios",
+        "imagen":"https://i.pinimg.com/564x/61/54/e0/6154e068358456b4d87487dd52ec6da4.jpg",
+        "precio": 4500
+    },
+    {
+        "id": 2,
+        "titulo": "Canasto para cuna",
+        "descripcion": "Canasto organizador para poner en la cuna. Tené todo lo necesario cerca.",
+        "vistaprevia": "Canastito organizador para colgar en la cuna.",
+        "categoria":"Varios",
+        "imagen":"https://i.pinimg.com/564x/c9/b1/59/c9b159522cbcd8d3c0e35c74b86b7d99.jpg",
+        "precio": 3800
+    },
+    {
+        "id": 3,
+        "titulo": "Canasto para juguetes",
+        "descripcion": "Canasto multiuso. Creamos objetos que completan tu espacio con un toque especial y te ayudan a ordenar, sumando un poco de tu esencia personal en cada rincón. Medidas: 30 cm de diámetro/35 cm de altura.",
+        "vistaprevia": "Canasto multiuso.",
+        "categoria":"Varios",
+        "imagen":"https://i.pinimg.com/564x/ee/47/5b/ee475b4adcfa0cbf738dbe960380bf97.jpg",
+        "precio": 6300
+    },
+    {
+        "id": 4,
+        "titulo": "Mantita para bebé",
+        "descripcion": "Estas mantas son perfectas para mantener a tu bebé calentito y cómodo durante los días fríos. Elaboradas con materiales de la más alta calidad, estas mantas son extremadamente suaves al tacto, brindando una sensación de delicadeza y confort inigualable. Tu bebé estará siempre protegido y resguardado del frío. Medidas: 1,00 x 0,70 metros.",
+        "vistaprevia": "Manta tejida 100% artesanal.",
+        "categoria":"Varios",
+        "imagen":"https://i.pinimg.com/564x/dd/c1/6e/ddc16e619f17596433343d8da409da98.jpg",
+        "precio": 6300
+    },
+    {
+        "id": 5,
+        "titulo": "Combo 1",
+        "descripcion": "Kit para tu bebé: sonajero + muñequito + porta chupete.",
+        "vistaprevia": "Sonajero + muñeco + portachuete.",
+        "categoria":"Combos",
+        "imagen":"https://i.pinimg.com/564x/33/2e/ee/332eeea0dc6c0c59347a46f9a22244f7.jpg",
+        "precio": 5900
+    },
+    {
+        "id": 6,
+        "titulo": "Combo 2",
+        "descripcion": "Kit para tu bebé: sonajero + muñequito + porta chupete.",
+        "vistaprevia": "Sonajero + muñeco + portachuete.",
+        "categoria":"Combos",
+        "imagen":"https://i.pinimg.com/564x/59/d2/36/59d236a77032278570cd5583f1ac7e53.jpg",
+        "precio": 5900
+    },
+    {
+        "id": 7,
+        "titulo": "Combo 3",
+        "descripcion": "Kit para tu bebé: sonajero + muñequito + porta chupete.",
+        "vistaprevia": "Sonajero + muñeco + portachuete.",
+        "categoria":"Combos",
+        "imagen":"https://i.pinimg.com/564x/ff/1d/b8/ff1db88455cf276664415cccb055c9b9.jpg",
+        "precio": 5900
+    },
+    {
+        "id": 8,
+        "titulo": "Combo 4",
+        "descripcion": "Kit para tu bebé: sonajero + muñequito + porta chupete.",
+        "vistaprevia": "Sonajero + muñeco + portachuete.",
+        "categoria":"Combos",
+        "imagen":"https://i.pinimg.com/564x/1e/25/1b/1e251b03fa9c47175f1c9ec2a56c2578.jpg",
+        "precio": 5900
+    },
+    {
+        "id": 9,
+        "titulo": "Combo 5",
+        "descripcion": "Kit para tu bebé: sonajero + muñequito + porta chupete.",
+        "vistaprevia": "Sonajero + muñeco + portachuete.",
+        "categoria":"Combos",
+        "imagen":"https://i.pinimg.com/564x/53/fc/41/53fc412deb125d3d09f5cc3efc6cb61e.jpg",
+        "precio": 5900
+    },
+    {
+        "id": 10,
+        "titulo": "Muñecos amigurumi x2 unidades",
+        "descripcion": "Incluye: 2 muñequitos para tu bebé. Temática de los muñecos a elección, pueden ser distintos o iguales. Medidas aproximadas: 20cm de alto.",
+        "vistaprevia": "Muñecos tejidos al crochet de vaquita.",
+        "categoria":"Muñecos",
+        "imagen":"https://i.pinimg.com/564x/af/01/0f/af010fc6b12a4291b33bd53c6d33d55e.jpg",
+        "precio": 5200
+    },
+    {
+        "id": 11,
+        "titulo": "Muñeco amigurumi",
+        "descripcion": "Muñequito para tu bebé de patito. Medidas aproximadas: 20cm de alto.",
+        "vistaprevia": "Muñeco tejido al crochet de patito.",
+        "categoria":"Muñecos",
+        "imagen":"https://i.pinimg.com/564x/02/42/e2/0242e2e82166e7bec714d155d93c8a2b.jpg",
+        "precio": 4000
+    },
+    {
+        "id": 12,
+        "titulo": "Muñeco amigurumi",
+        "descripcion": "Muñequito para tu bebé de reno. Medidas aproximadas: 20cm de alto.",
+        "vistaprevia": "Muñeco tejido al crochet de reno.",
+        "categoria":"Muñecos",
+        "imagen":"https://i.pinimg.com/564x/ca/84/c2/ca84c2405a6fddfebdc76c1e82c7dfde.jpg",
+        "precio": 4000
+    },
+    {
+        "id": 13,
+        "titulo": "Muñeco amigurumi",
+        "descripcion": "Muñequito para tu bebé de monito. Medidas aproximadas: 20cm de alto.",
+        "vistaprevia": "Muñeco tejido al crochet de mono.",
+        "categoria":"Muñecos",
+        "imagen":"https://i.pinimg.com/564x/7f/cb/e0/7fcbe087374f5496f14e2b1f0b87de76.jpg",
+        "precio": 4000
+    },
+    {
+        "id": 14,
+        "titulo": "Colgante móvil para cuna Estrellitas",
+        "descripcion": "Colgante para la cuna de tu bebé  de estrellitas, luna y nubes con soporte de madera. Medidas aproximadas: 28x28 cm de ancho por 45cm de altura. 100% artesanal y hecho a mano",
+        "vistaprevia": "Movil para cuna con soporte de madera.",
+        "categoria":"Colgantes",
+        "imagen":"https://i.pinimg.com/564x/67/f9/81/67f981d144900711d1e65448499b39c8.jpg",
+        "precio": 8700
+    },
+    {
+        "id": 15,
+        "titulo": "Colgante móvil para cuna Animalitos",
+        "descripcion": "Colgante para la cuna de tu bebé  de animalitos con soporte de madera. Medidas aproximadas: 28x28 cm de ancho por 45cm de altura. 100% artesanal y hecho a mano",
+        "vistaprevia": "Movil para cuna con soporte de madera.",
+        "categoria":"Colgantes",
+        "imagen":"https://i.pinimg.com/564x/8d/0f/4b/8d0f4b3e2f89b0a0f71daf5f9c4aeaf9.jpg",
+        "precio": 8700 
+    },
+    {
+        "id": 16,
+        "titulo": "Colgante móvil para cuna dinosaurios",
+        "descripcion": "Colgante para la cuna de tu bebé  de dinosaurios con soporte de madera. Medidas aproximadas: 28x28 cm de ancho por 45cm de altura. 100% artesanal y hecho a mano",
+        "vistaprevia": "Movil para cuna con soporte de madera.",
+        "categoria":"Colgantes",
+        "imagen":"https://i.pinimg.com/564x/9a/f0/c2/9af0c247f871e5edafe8603ef3c04ae6.jpg",
+        "precio": 8700 
+    },
+    {
+        "id": 17,
+        "titulo": "Colgante móvil para cuna de abejitas",
+        "descripcion": "Colgante para la cuna de tu bebé  de animalitos marinos con soporte de madera. Medidas aproximadas: 28x28 cm de ancho por 45cm de altura. 100% artesanal y hecho a mano",
+        "vistaprevia": "Movil para cuna con soporte de madera.",
+        "categoria":"Colgantes",
+        "imagen":"https://i.pinimg.com/564x/ea/24/e2/ea24e28cb7224285f99f67df60315141.jpg",
+        "precio": 8700 
+    },
+    {
+        "id": 18,
+        "titulo": "Gorritos de lana para bebé",
+        "descripcion": "Gorritos super calentitos y suaves para proteger a tu bebé del frío. Color a elección. 100% artesanal y hecho a mano",
+        "vistaprevia": "Gorros tejidos al crochet. 3 talles.",
+        "categoria":"Ropa",
+        "imagen":"https://i.pinimg.com/564x/cb/ae/86/cbae86e0b0c239a3dfa55defdfc277d3.jpg",
+        "precio": 2500 
+    },
+    {
+        "id": 19,
+        "titulo": "Buzo de lana para bebé",
+        "descripcion": "Bucitos super calentitos y suaves para proteger a tu bebé del frío. Color a elección. 100% artesanal y hecho a mano",
+        "vistaprevia": "Sweater tejido al crochet. Color a elección.",
+        "categoria":"Ropa",
+        "imagen":"https://i.pinimg.com/564x/d5/3c/4f/d53c4f99919a4b8ad9eadfb8d4452fc2.jpg",
+        "precio": 3200
+    },
+    {
+        "id": 20,
+        "titulo": "Body de lana para bebé",
+        "descripcion": "Bodys super calentitos y suaves para proteger a tu bebé del frío. Color a elección. 100% artesanal y hecho a mano",
+        "vistaprevia": "Bodys tejidos al crochet para nene y nena.",
+        "categoria":"Ropa",
+        "imagen":"https://i.pinimg.com/564x/3a/cc/16/3acc1659eeb441f822dc941b64e8728c.jpg",
+        "precio": 3400
+    },
+    {
+        "id": 21,
+        "titulo": "Vincha turbante de lana para bebé",
+        "descripcion": "Turbantes de lana super calentitos y suaves para proteger a tu bebé del frío. Color a elección. 100% artesanal y hecho a mano",
+        "vistaprevia": "Tejido al crochet. Color a elección. ",
+        "categoria":"Ropa",
+        "imagen":"https://i.pinimg.com/564x/99/99/81/999981b6fd7a38cab5fcff2835134cd6.jpg",
+        "precio": 1500
+    }
+]
+
+
