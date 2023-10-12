@@ -15,19 +15,23 @@ function App() {
   return (
     <BrowserRouter>
       <div className='App'>
+
         <div className='Nav'>
           <NavBar/>
           <CategoriasMenu/>
         </div>
+
         <Routes>
           <Route path='/' element={ <Home/> } />
           <Route path='/sobreNosotros' element={ <SobreNosotros/> } />
           <Route path='/recursosGratuitos' element={ <RecursosGratuitos/> } />
           <Route path='*' element={ <NotFound/> } />
         </Routes>
+
         <div className='Footer'>
           <Footer/>
         </div>
+        
       </div>
     </BrowserRouter>
   );
