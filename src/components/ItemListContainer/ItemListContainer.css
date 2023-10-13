@@ -6,6 +6,10 @@
     text-decoration: none;
 }
 
+.productos-contenedor h3{
+    padding: 40px 0px !important;
+}
+
 .productos-contenedor{
     margin: 20px;
 }

@@ -1,0 +1,46 @@
+.ItemDetail-container{
+    background-color: rgba(225,235,216,1);
+    width: 80%;
+    height: 300px;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    margin-top: 6vw !important;
+    justify-content: center !important;
+}
+
+.detalleProductoImg{
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.detalleProductoImg img{
+    width: fit-content;
+    height: 100%;
+
+}
+
+.detalleProducto{
+    margin: 20px !important;
+}
+
+.detalleProducto h3{
+    text-align: left;
+    letter-spacing: 1.5px;
+    padding: 7px !important;
+}
+
+.detalleProducto p{
+    text-align: left;
+    padding: 5px !important;
+}
+
+.descripcionDetalle{
+    padding: 10px 0px !important;
+}
+
+.itemPrecio{
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 1px;
+}

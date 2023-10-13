@@ -1,0 +1,23 @@
+import "./ItemDetail.css";
+
+const ItemDetail = ( {producto} ) => {
+    return (
+        <div className="ItemDetail-container">
+            <div className="detalleProductoImg">
+                <img src={producto.imagen} alt={producto.titulo} />
+            </div>
+            <div className="detalleProducto">
+                <h3>{producto.titulo}</h3>
+                <p>Código del producto: {producto.id}</p>
+                <p>Categoría: {producto.categoria}</p>
+                <p className="descripcionDetalle">{producto.descripcion}</p>
+                <p className="itemPrecio">Precio: ${producto.precio}</p>
+            </div>
+            <div className="counterCarrito">
+        
+            </div>
+        </div>
+    )
+}
+
+export default ItemDetail;
