@@ -2,16 +2,24 @@ import './ItemListContainer.css';
 import { useEffect, useState } from 'react';
 import { pedirDatos } from "../../pedirDatos/pedirDatos";
 import ItemList from '../ItemList/ItemList';
+import { useParams } from 'react-router-dom';
 
 const ItemListContainer = ({greeting}) => {
     const [productos, setProductos] = useState([]);
-    
+    const { categoria } = useParams();
+    console.log(categoria);
+
     useEffect(() => {
         pedirDatos()
             .then((res) => {
-                setProductos(res);
+                if (categoria){
+                    const productosFiltrados = res.filter((prod) => prod.categoria === categoria);
+                    setProductos (productosFiltrados);
+                }else{
+                    setProductos(res);
+                }
             })
-    }, [])
+    }, [categoria])
     
     return (
         <div>

@@ -10,6 +10,7 @@ import SobreNosotros from './pages/AboutPage/AboutPage';
 import RecursosGratuitos from './pages/RecursosPage/RecursosPage';
 import NotFound from './pages/NotFoundPage/NotFoundPage';
 import Detail from "./pages/DetailPage/DetailPage";
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path='/recursosGratuitos' element={ <RecursosGratuitos/> } />
           <Route path='/detail/:id' element={ <Detail/> } />
           <Route path='*' element={ <NotFound/> } />
+          <Route path='/productos/:categoria' element={ <ItemListContainer/> } />
         </Routes>
 
         <div className='Footer'>
