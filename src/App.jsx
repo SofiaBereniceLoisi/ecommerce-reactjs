@@ -1,41 +1,38 @@
-import './App.css';
-import CategoriasMenu from './components/CategoriasMenu/CategoriasMenu';
-import Footer from './components/Footer/Footer';
-import NavBar from './components/NavBar/NavBar';
+import "./App.css";
+import CategoriasMenu from "./components/CategoriasMenu/CategoriasMenu";
+import Footer from "./components/Footer/Footer";
+import NavBar from "./components/NavBar/NavBar";
 // REACT ROUTER DOM---------
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 // PAGES--------------------
-import Home from './pages/HomePage/HomePage';
-import SobreNosotros from './pages/AboutPage/AboutPage';
-import RecursosGratuitos from './pages/RecursosPage/RecursosPage';
-import NotFound from './pages/NotFoundPage/NotFoundPage';
+import Home from "./pages/HomePage/HomePage";
+import SobreNosotros from "./pages/AboutPage/AboutPage";
+import RecursosGratuitos from "./pages/RecursosPage/RecursosPage";
+import NotFound from "./pages/NotFoundPage/NotFoundPage";
 import Detail from "./pages/DetailPage/DetailPage";
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 
 function App() {
   return (
     <BrowserRouter>
-      <div className='App'>
-
-        <div className='Nav'>
-          <NavBar/>
-          <CategoriasMenu/>
-
+      <div className="App">
+        <div className="Nav">
+          <NavBar />
+          <CategoriasMenu />
         </div>
 
         <Routes>
-          <Route path='/' element={ <Home/> } />
-          <Route path='/sobreNosotros' element={ <SobreNosotros/> } />
-          <Route path='/recursosGratuitos' element={ <RecursosGratuitos/> } />
-          <Route path='/detail/:id' element={ <Detail/> } />
-          <Route path='*' element={ <NotFound/> } />
-          <Route path='/productos/:categoria' element={ <ItemListContainer/> } />
+          <Route path="/" element={<Home />} />
+          <Route path="/sobreNosotros" element={<SobreNosotros />} />
+          <Route path="/recursosGratuitos" element={<RecursosGratuitos />} />
+          <Route path="/detail/:id" element={<Detail />} />
+          <Route path="*" element={<NotFound />} />
+          <Route path="/productos/:categoria" element={<ItemListContainer />} />
         </Routes>
 
-        <div className='Footer'>
-          <Footer/>
+        <div className="Footer">
+          <Footer />
         </div>
-
       </div>
     </BrowserRouter>
   );
