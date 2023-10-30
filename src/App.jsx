@@ -11,9 +11,11 @@ import SobreNosotros from "./pages/AboutPage/AboutPage";
 import RecursosGratuitos from "./pages/RecursosPage/RecursosPage";
 import NotFound from "./pages/NotFoundPage/NotFoundPage";
 import Detail from "./pages/DetailPage/DetailPage";
-
+import CartPage from "./pages/CartPage/CartPage";
+// CONTEXT -----------------
 import { CartContext } from "./context/CartContext";
 import { useState } from "react";
+
 
 function App() {
 
@@ -36,8 +38,17 @@ function App() {
     return cart.reduce((acc, prod) => acc + prod.quantity, 0)
   }
 
+  const totalPrice = () => {
+    return cart.reduce((acc, prod) => acc + prod.precio * prod.quantity, 0);
+  }
+
+  const emptyCart = () => {
+    setCart([]);
+  }
+
+
   return (
-    <CartContext.Provider value={{ cart, addToCart, quantityInCart }}>
+    <CartContext.Provider value={{ cart, addToCart, quantityInCart, totalPrice, emptyCart}}>
       <BrowserRouter>
         <div className="App">
           <div className="Nav">
@@ -52,6 +63,7 @@ function App() {
             <Route path="/detail/:id" element={<Detail />} />
             <Route path="*" element={<NotFound />} />
             <Route path="/productos/:categoria" element={<ItemListContainer />} />
+            <Route path="/cart" element={<CartPage />} />
           </Routes>
 
           <div className="Footer">
