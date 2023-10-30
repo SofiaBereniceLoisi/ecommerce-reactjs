@@ -13,42 +13,13 @@ import NotFound from "./pages/NotFoundPage/NotFoundPage";
 import Detail from "./pages/DetailPage/DetailPage";
 import CartPage from "./pages/CartPage/CartPage";
 // CONTEXT -----------------
-import { CartContext } from "./context/CartContext";
-import { useState } from "react";
+import { CartProvider } from "./context/CartContext";
 
 
 function App() {
 
-  const [cart, setCart] = useState([]);
-
-  const addToCart = (producto, quantity) => {
-    const productoAgregado = { ...producto, quantity };
-    const newCart = [...cart];
-    const isInCart = newCart.find((producto) => producto.id === productoAgregado.id)
-
-    if (isInCart) {
-      isInCart.quantity += quantity;
-    } else {
-      newCart.push(productoAgregado);
-    }
-    setCart(newCart);
-  };
-
-  const quantityInCart = () => {
-    return cart.reduce((acc, prod) => acc + prod.quantity, 0)
-  }
-
-  const totalPrice = () => {
-    return cart.reduce((acc, prod) => acc + prod.precio * prod.quantity, 0);
-  }
-
-  const emptyCart = () => {
-    setCart([]);
-  }
-
-
   return (
-    <CartContext.Provider value={{ cart, addToCart, quantityInCart, totalPrice, emptyCart}}>
+    <CartProvider>
       <BrowserRouter>
         <div className="App">
           <div className="Nav">
@@ -71,7 +42,7 @@ function App() {
           </div>
         </div>
       </BrowserRouter>
-    </CartContext.Provider>
+    </CartProvider>
   );
 }
 
