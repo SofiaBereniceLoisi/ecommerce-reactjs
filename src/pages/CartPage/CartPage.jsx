@@ -2,10 +2,11 @@ import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 import "./CartPage.css";
 import { useNavigate } from "react-router-dom";
+import DeleteIcon from '@mui/icons-material/Delete';
 
 const CartPage = () => {
 
-    const { cart, totalPrice, emptyCart } = useContext(CartContext);
+    const { cart, totalPrice, emptyCart, deleteItem } = useContext(CartContext);
     const navigate = useNavigate();
 
     return (
@@ -22,10 +23,9 @@ const CartPage = () => {
                             <p>Precio unitario: ${prod.precio}</p>
                             <p>Total: ${prod.precio * prod.quantity}</p>
                             <p>Cantidad: {prod.quantity}</p>
+                            <DeleteIcon onClick={() => deleteItem(prod.id)} className="deleteIcon"/>
                         </div>
-                        <div>
-
-                        </div>
+                        
                     </div>
                 ))
             }

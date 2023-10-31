@@ -1,4 +1,6 @@
 import { createContext, useEffect, useState } from "react";
+import Toastify from 'toastify-js';
+import "toastify-js/src/toastify.css";
 
 export const CartContext = createContext();
 
@@ -33,12 +35,31 @@ export const CartProvider = ({ children }) => {
         setCart([]);
     }
 
+    const deleteItem = (id) => {
+        const updatedCart = cart.filter((producto) => producto.id !== id);
+        setCart(updatedCart);
+        Toastify({
+            text: "Producto eliminado" ,
+            duration: 3000,
+            close: true,
+            gravity: "top",
+            position: "right",
+            stopOnFocus: true,
+            className: "toastifyDeletedItem",
+            style: {
+                padding: "10px",
+                background: "#3D403A",
+                color: "white",
+            },
+        }).showToast();
+    }
+
     useEffect(() => {
         localStorage.setItem("cart", JSON.stringify(cart));
     }, [cart]);
 
     return (
-        <CartContext.Provider value={{ cart, addToCart, quantityInCart, totalPrice, emptyCart }}>
+        <CartContext.Provider value={{ cart, addToCart, quantityInCart, totalPrice, emptyCart, deleteItem }}>
             {children}
         </CartContext.Provider>
     )
