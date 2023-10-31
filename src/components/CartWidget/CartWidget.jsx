@@ -11,9 +11,13 @@ const CartWidget = () => {
 
     return (
         <div className='CartWidget'>
-            <Link to={'/cart'} className='CartWidget' style={{'color': 'black'}}>
+            <Link to={'/cart'} className='CartWidget' style={{ 'color': 'black' }}>
                 <ShoppingCartIcon sx={{ fontSize: 20 }} />
-                <span className='cartNumber'>{quantityInCart()}</span>
+
+                {
+                    quantityInCart() > 0 && (
+                        <span className='cartNumber'>{quantityInCart()}</span>)
+                }
             </Link>
         </div>
     )
