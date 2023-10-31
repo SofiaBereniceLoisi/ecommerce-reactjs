@@ -46,11 +46,6 @@ export const CartProvider = ({ children }) => {
             position: "right",
             stopOnFocus: true,
             className: "toastifyDeletedItem",
-            style: {
-                padding: "10px",
-                background: "#3D403A",
-                color: "white",
-            },
         }).showToast();
     }
 
