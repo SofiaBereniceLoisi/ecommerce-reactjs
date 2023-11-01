@@ -16,12 +16,12 @@ const CartPage = () => {
                 cart.map((prod) => (
                     <div key={prod.id} className="productInCartContainer">
                         <div className="productInCartImg">
-                            <img src={prod.imagen} alt="" />
+                            <img src={prod.image} alt="" />
                         </div>
                         <div className="productInCart">
-                            <h3>{prod.titulo}</h3>
-                            <p>Precio unitario: ${prod.precio}</p>
-                            <p>Total: ${prod.precio * prod.quantity}</p>
+                            <h3>{prod.title}</h3>
+                            <p>Precio unitario: ${prod.price}</p>
+                            <p>Subtotal: ${prod.price * prod.quantity}</p>
                             <p>Cantidad: {prod.quantity}</p>
                             <DeleteIcon onClick={() => deleteItem(prod.id)} className="deleteIcon"/>
                         </div>

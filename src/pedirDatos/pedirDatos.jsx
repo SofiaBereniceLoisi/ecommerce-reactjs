@@ -1,11 +1,11 @@
 
-import productos from "./productos.json";
+import products from "./productos.json";
 
 
 export const pedirDatos = () => {
     return new Promise ((resolve, reject) =>{
         setTimeout(() => {
-            resolve(productos)
+            resolve(products)
         }, 1200);
     })
 }
@@ -13,9 +13,9 @@ export const pedirDatos = () => {
 export const pedirItemPorId = (id) => {
     return new Promise ((resolve,reject) => {
         
-        const producto = productos.find((el) => el.id === id)
-        if(producto){
-            resolve(producto)
+        const product = products.find((el) => el.id === id)
+        if(product){
+            resolve(product)
         }else{
             reject({
                 error: "Producto no encontrado"

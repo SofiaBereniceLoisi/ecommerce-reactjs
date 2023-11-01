@@ -1,5 +1,5 @@
 import "./App.css";
-import CategoriasMenu from "./components/CategoriasMenu/CategoriasMenu";
+import CategoryMenu from "./components/CategoryMenu/CategoryMenu";
 import Footer from "./components/Footer/Footer";
 import NavBar from "./components/NavBar/NavBar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
@@ -24,7 +24,7 @@ function App() {
         <div className="App">
           <div className="Nav">
             <NavBar />
-            <CategoriasMenu />
+            <CategoryMenu />
           </div>
 
           <Routes>
@@ -33,7 +33,7 @@ function App() {
             <Route path="/recursosGratuitos" element={<RecursosGratuitos />} />
             <Route path="/detail/:id" element={<Detail />} />
             <Route path="*" element={<NotFound />} />
-            <Route path="/productos/:categoria" element={<ItemListContainer />} />
+            <Route path="/products/:category" element={<ItemListContainer />} />
             <Route path="/cart" element={<CartPage />} />
           </Routes>
 

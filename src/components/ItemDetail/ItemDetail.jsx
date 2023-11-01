@@ -3,8 +3,8 @@ import ItemCounter from "../ItemCounter/ItemCounter";
 import "./ItemDetail.css";
 import { CartContext } from "../../context/CartContext";
 
-const ItemDetail = ({ producto }) => {
-    const { cart, addToCart } = useContext(CartContext);
+const ItemDetail = ({ product }) => {
+    const { addToCart } = useContext(CartContext);
 
     const [quantity, setQuantity] = useState(1);
 
@@ -21,21 +21,21 @@ const ItemDetail = ({ producto }) => {
     return (
         <div className="ItemDetail-container">
             <div className="detalleProductoImg">
-                <img src={producto.imagen} alt={producto.titulo} />
+                <img src={product.image} alt={product.title} />
             </div>
             <div className="detalleProducto">
-                <h3>{producto.titulo}</h3>
-                <p>Código del producto: {producto.id}</p>
-                <p>Categoría: {producto.categoria}</p>
-                <p className="descripcionDetalle">{producto.descripcion}</p>
-                <p className="itemPrecio">Precio: ${producto.precio}</p>
+                <h3>{product.title}</h3>
+                <p>Código del producto: {product.id}</p>
+                <p>Categoría: {product.category}</p>
+                <p className="descripcionDetalle">{product.description}</p>
+                <p className="itemPrecio">Precio: ${product.price}</p>
             </div>
             <div className="counterCarrito">
                 <ItemCounter
                     quantity={quantity}
                     increment={increment}
                     decrement={decrement}
-                    addToCart={() => { addToCart(producto, quantity) }}
+                    addToCart={() => { addToCart(product, quantity) }}
                 />
             </div>
         </div>

@@ -10,15 +10,15 @@ export const CartProvider = ({ children }) => {
 
     const [cart, setCart] = useState(initialCart);
 
-    const addToCart = (producto, quantity) => {
-        const productoAgregado = { ...producto, quantity };
+    const addToCart = (product, quantity) => {
+        const addedProduct = { ...product, quantity };
         const newCart = [...cart];
-        const isInCart = newCart.find((producto) => producto.id === productoAgregado.id)
+        const isInCart = newCart.find((product) => product.id === addedProduct.id)
 
         if (isInCart) {
             isInCart.quantity += quantity;
         } else {
-            newCart.push(productoAgregado);
+            newCart.push(addedProduct);
         }
         setCart(newCart);
     };
@@ -28,7 +28,7 @@ export const CartProvider = ({ children }) => {
     }
 
     const totalPrice = () => {
-        return cart.reduce((acc, prod) => acc + prod.precio * prod.quantity, 0);
+        return cart.reduce((acc, prod) => acc + prod.price * prod.quantity, 0);
     }
 
     const emptyCart = () => {
@@ -36,7 +36,7 @@ export const CartProvider = ({ children }) => {
     }
 
     const deleteItem = (id) => {
-        const updatedCart = cart.filter((producto) => producto.id !== id);
+        const updatedCart = cart.filter((product) => product.id !== id);
         setCart(updatedCart);
         Toastify({
             text: "Producto eliminado" ,
