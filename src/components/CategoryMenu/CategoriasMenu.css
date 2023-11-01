@@ -4,10 +4,10 @@
     align-items: center;
     text-align: center;
     width: 100%;
-    min-height: 10vh;
+    min-height: 8vh;
     background: rgb(197,214,181);
     background: radial-gradient(circle, rgba(197,214,181,1) 1%, rgba(225,235,216,1) 61%, rgba(255,255,255,1) 100%);
-    font-size: 1.2vw;
+    font-size: 0.8rem;
     position: sticky;
     top: 0;
 }
@@ -27,7 +27,7 @@
     display: inline-block;
     text-decoration: none;
     color: black;
-    font-size: 15px;
+    font-size: 0.8rem;
 }
 
 .categoryLink:after {
@@ -48,7 +48,7 @@
 .categoryLinkActive{
     text-decoration: underline;
     color: black;
-    font-size: 15px;
+    font-size: 0.9rem;
 }
 
 

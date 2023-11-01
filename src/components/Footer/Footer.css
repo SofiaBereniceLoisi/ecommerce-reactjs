@@ -30,7 +30,7 @@
 
 .derechos{
     grid-area: derechos;
-    font-size: 1.5vw;
+    font-size: 0.8rem;
     color: rgba(225,235,216,1);
 }
 
@@ -41,7 +41,7 @@
 }
 
 .quienes-somos p{
-    font-size: 1.4vw;
+    font-size: 1rem;
     color: rgba(225,235,216,1);
 }
 
@@ -50,20 +50,20 @@
 }
 
 .redes ul li{
-    font-size: 1.4vw;
+    font-size: 1rem;
     margin: 5px !important;
     color: rgba(225,235,216,1);
 }
 
 .redes h3{
-    font-size: 1.6vw;
+    font-size: 1.4vw;
     letter-spacing: 1.3px;
     color: rgba(225,235,216,1);
 }
 
 .gracias{
     padding-top: 8px !important;
-    font-size: 1.3vw;
+    font-size: 1rem;
     font-weight: bold;
     letter-spacing: 1.5px;
     color: rgba(225,235,216,1);

@@ -25,6 +25,7 @@
     height: auto;
     aspect-ratio: 2/2;
     object-fit: cover;
+    border-radius: 0.6rem;
 }
 
 .detalle-producto{

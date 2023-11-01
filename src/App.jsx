@@ -12,9 +12,9 @@ import RecursosGratuitos from "./pages/RecursosPage/RecursosPage";
 import NotFound from "./pages/NotFoundPage/NotFoundPage";
 import Detail from "./pages/DetailPage/DetailPage";
 import CartPage from "./pages/CartPage/CartPage";
+import CheckOut from "./pages/CkeckOutPage/CheckOut";
 // CONTEXT -----------------
 import { CartProvider } from "./context/CartContext";
-
 
 function App() {
 
@@ -35,6 +35,7 @@ function App() {
             <Route path="*" element={<NotFound />} />
             <Route path="/products/:category" element={<ItemListContainer />} />
             <Route path="/cart" element={<CartPage />} />
+            <Route path="/checkout" element={<CheckOut />} />
           </Routes>
 
           <div className="Footer">
