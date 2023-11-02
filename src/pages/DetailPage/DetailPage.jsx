@@ -29,9 +29,7 @@ const DetailPage = () => {
             <div>
                 <button onClick={() => navigate('/')} className="buttonToHomePage">Seguir comprando</button>
             </div>
-
         </div>
-
     )
 }
 

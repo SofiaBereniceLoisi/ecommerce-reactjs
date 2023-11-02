@@ -1,4 +1,5 @@
 import "./App.css";
+// COMPONENTS-------------  
 import CategoryMenu from "./components/CategoryMenu/CategoryMenu";
 import Footer from "./components/Footer/Footer";
 import NavBar from "./components/NavBar/NavBar";
@@ -13,10 +14,8 @@ import Detail from "./pages/DetailPage/DetailPage";
 import CartPage from "./pages/CartPage/CartPage";
 import CheckOut from "./pages/CkeckOutPage/CheckOut";
 import ContactPage from "./pages/ContactPage/ContactPage";
-
 // CONTEXT -----------------
 import { CartProvider } from "./context/CartContext";
-
 
 function App() {
 

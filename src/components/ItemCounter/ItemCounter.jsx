@@ -1,8 +1,6 @@
 import "./ItemCounter.css";
 
-
-const ItemCounter = ( {quantity, decrement, increment, addToCart} ) => {
-    
+const ItemCounter = ({ quantity, decrement, increment, addToCart }) => {
 
     return (
         <div className="counter">

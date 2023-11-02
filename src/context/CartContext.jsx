@@ -39,7 +39,7 @@ export const CartProvider = ({ children }) => {
         const updatedCart = cart.filter((product) => product.id !== id);
         setCart(updatedCart);
         Toastify({
-            text: "Producto eliminado" ,
+            text: "Producto eliminado",
             duration: 3000,
             close: true,
             gravity: "top",

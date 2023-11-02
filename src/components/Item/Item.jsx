@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import "./Item.css";
 
-const Item = ({product}) => {
+const Item = ({ product }) => {
     const navigate = useNavigate();
     return (
         <div className="producto" onClick={() => navigate(`/detail/${product.id}`)}>

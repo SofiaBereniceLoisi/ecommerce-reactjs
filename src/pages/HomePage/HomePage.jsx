@@ -3,7 +3,7 @@ import ItemListContainer from "../../components/ItemListContainer/ItemListContai
 const HomePage = () => {
     return (
         <div className='Main'>
-            <ItemListContainer greeting={'Bienvenidos a la tienda online La Frida Crochet'}/>
+            <ItemListContainer greeting={'Bienvenidos a la tienda online La Frida Crochet'} />
         </div>
     )
 }

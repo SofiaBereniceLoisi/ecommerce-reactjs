@@ -11,7 +11,7 @@ const ItemListContainer = ({ greeting }) => {
 
     useEffect(() => {
         const productsRef = collection(dataBase, "products");
-        const q = category  ? query(productsRef, where("category", "==", category)) : productsRef;
+        const q = category ? query(productsRef, where("category", "==", category)) : productsRef;
 
         getDocs(q)
             .then((res) => {
@@ -32,19 +32,8 @@ const ItemListContainer = ({ greeting }) => {
                 <h3>Chusmeá nuestro catálogo completo de productos</h3>
                 <ItemList products={products} />
             </div>
-
         </div>
     )
 }
-
-// pedirDatos()
-//             .then((res) => {
-//                 if (categoria) {
-//                     const productosFiltrados = res.filter((prod) => prod.categoria === categoria);
-//                     setProductos(productosFiltrados);
-//                 } else {
-//                     setProductos(res);
-//                 }
-//             })
 
 export default ItemListContainer;

@@ -25,7 +25,6 @@ const CartPage = () => {
                             <p>Cantidad: {prod.quantity}</p>
                             <DeleteIcon onClick={() => deleteItem(prod.id)} className="deleteIcon" />
                         </div>
-
                     </div>
                 ))
             }

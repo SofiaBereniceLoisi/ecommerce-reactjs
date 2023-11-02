@@ -13,7 +13,6 @@ const CartWidget = () => {
         <div className='CartWidget'>
             <Link to={'/cart'} className='CartWidget' style={{ 'color': 'black' }}>
                 <ShoppingCartIcon sx={{ fontSize: 20 }} />
-
                 {
                     quantityInCart() > 0 && (
                         <span className='cartNumber'>{quantityInCart()}</span>)
