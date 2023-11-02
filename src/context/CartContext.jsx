@@ -45,7 +45,7 @@ export const CartProvider = ({ children }) => {
             gravity: "top",
             position: "right",
             stopOnFocus: true,
-            className: "toastifyDeletedItem",
+            className: "toastify",
         }).showToast();
     }
 

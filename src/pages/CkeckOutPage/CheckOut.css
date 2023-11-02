@@ -1,0 +1,65 @@
+.formContainer{
+    margin: 5rem !important;
+}
+
+.formContainer h1, .formContainer h2{
+    padding-bottom: 1.2rem !important;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column !important;
+    align-items: center;
+    gap: .5rem;
+
+}
+
+.form input , .texterea{
+    padding: .5rem !important;
+    width: 18rem;
+    border-radius: 5rem;
+    border: 2px solid #E1EBD8;
+    margin: 5px !important;
+}
+
+.texterea{
+    border-radius: 2rem !important;
+}
+
+.form input:focus, .texterea:focus {
+    outline: 0;
+    border: 2px solid #C5D6B5;
+    outline: 2px solid #C5D6B5;
+}
+
+.buttonComprar, .purchaseComplete button{
+    margin: 10px !important;
+    background-color: #3D403A;
+    color: white;
+    padding: .5rem !important;
+    border-radius: 10rem;
+    border: 0px;
+    font-size: 0.9rem;
+    width: 18rem;
+}
+
+.purchaseComplete button{
+    margin-top: 5rem !important;
+}
+
+.buttonComprar:hover , .purchaseComplete button:hover{
+    background: repeating-linear-gradient(
+        45deg,#575b54 20px,#575b54 40px,#3d403a 40px,#3d403a 60px
+    );
+    cursor: pointer;
+}
+
+.purchaseComplete{
+    margin: 3rem !important;
+}
+
+
+.purchaseComplete h2{
+    margin: 1rem !important;
+}

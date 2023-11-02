@@ -14,7 +14,7 @@ const NavBar = () => {
             <ul className="navbarList">
                 <li><Link to="/" style={{"color":"black", "textDecoration":"none"}}>Home</Link></li>
                 <li><Link to="/sobreNosotros" style={{"color":"black", "textDecoration":"none"}}>Sobre nosotras</Link></li>
-                <li><Link to="/recursosGratuitos"style={{"color":"black", "textDecoration":"none"}} >Recursos Gratuitos</Link></li>
+                <li><Link to="/contact"style={{"color":"black", "textDecoration":"none"}} >Contacto</Link></li>
             </ul>
             <CartWidget/>
             <AvatarIcon/>

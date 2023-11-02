@@ -8,13 +8,15 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // PAGES--------------------
 import Home from "./pages/HomePage/HomePage";
 import SobreNosotros from "./pages/AboutPage/AboutPage";
-import RecursosGratuitos from "./pages/RecursosPage/RecursosPage";
 import NotFound from "./pages/NotFoundPage/NotFoundPage";
 import Detail from "./pages/DetailPage/DetailPage";
 import CartPage from "./pages/CartPage/CartPage";
 import CheckOut from "./pages/CkeckOutPage/CheckOut";
+import ContactPage from "./pages/ContactPage/ContactPage";
+
 // CONTEXT -----------------
 import { CartProvider } from "./context/CartContext";
+
 
 function App() {
 
@@ -30,7 +32,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/sobreNosotros" element={<SobreNosotros />} />
-            <Route path="/recursosGratuitos" element={<RecursosGratuitos />} />
+            <Route path="/contact" element={<ContactPage />} />
             <Route path="/detail/:id" element={<Detail />} />
             <Route path="*" element={<NotFound />} />
             <Route path="/products/:category" element={<ItemListContainer />} />

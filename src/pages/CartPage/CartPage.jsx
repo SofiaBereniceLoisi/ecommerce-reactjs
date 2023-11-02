@@ -23,9 +23,9 @@ const CartPage = () => {
                             <p>Precio unitario: ${prod.price}</p>
                             <p>Subtotal: ${prod.price * prod.quantity}</p>
                             <p>Cantidad: {prod.quantity}</p>
-                            <DeleteIcon onClick={() => deleteItem(prod.id)} className="deleteIcon"/>
+                            <DeleteIcon onClick={() => deleteItem(prod.id)} className="deleteIcon" />
                         </div>
-                        
+
                     </div>
                 ))
             }
@@ -34,7 +34,7 @@ const CartPage = () => {
                     <div>
                         <button onClick={emptyCart}>Vaciar Carrito</button>
                         <h2>Total a pagar: ${totalPrice()}</h2>
-                        <button>Comprar ahora</button>
+                        <button onClick={() => navigate('/checkout')}>Comprar ahora</button>
                         <button onClick={() => navigate('/')}>Seguir comprando</button>
                     </div>
                 ) : (
