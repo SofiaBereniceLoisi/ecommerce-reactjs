@@ -9,8 +9,8 @@ import { useNavigate } from 'react-router-dom';
 const CheckOut = () => {
     const navigate = useNavigate()
 
-    const [orderId, setOrderId] = useState("")
-
+    const [orderId, setOrderId] = useState("");
+    const [orderDetail, setOrderDetail] = useState([]);
     const { cart, totalPrice, emptyCart } = useContext(CartContext);
     const { register, handleSubmit } = useForm();
 
@@ -25,15 +25,27 @@ const CheckOut = () => {
         addDoc(ordersRef, order)
             .then((doc) => {
                 setOrderId(doc.id);
+                setOrderDetail(cart);
                 emptyCart();
             })
     }
 
     if (orderId) {
+        const totalPurchase = orderDetail.reduce((acc, item) => acc + item.price * item.quantity, 0);
         return (
             <div className='purchaseComplete'>
                 <h2>¡Muchas gracias por tu compra!</h2>
                 <p className='orderOfPurchase'>Orden de compra: {orderId} </p>
+                <div className='orderDetail'>
+                    <h3>Detalle:</h3>
+                    {orderDetail.map((item, index) => (
+                        <div className='orderDetailItem' key={index}>
+                            <p>{item.title} - Cantidad: {item.quantity}</p>
+                            <p>Subtotal: ${item.price * item.quantity}</p>
+                        </div>
+                    ))}
+                </div>
+                <p>Total de la Compra: ${totalPurchase}</p>
                 <button onClick={() => navigate('/')}>Volver a la página principal</button>
             </div>
         )
