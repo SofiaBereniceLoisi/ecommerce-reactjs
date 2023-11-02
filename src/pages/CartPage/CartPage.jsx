@@ -3,6 +3,7 @@ import { CartContext } from "../../context/CartContext";
 import "./CartPage.css";
 import { useNavigate } from "react-router-dom";
 import DeleteIcon from '@mui/icons-material/Delete';
+import { Tooltip } from "@mui/material";
 
 const CartPage = () => {
 
@@ -23,7 +24,10 @@ const CartPage = () => {
                             <p>Precio unitario: ${prod.price}</p>
                             <p>Subtotal: ${prod.price * prod.quantity}</p>
                             <p>Cantidad: {prod.quantity}</p>
-                            <DeleteIcon onClick={() => deleteItem(prod.id)} className="deleteIcon" />
+                            <Tooltip title="Eliminar">
+                                <DeleteIcon onClick={() => deleteItem(prod.id)} className="deleteIcon" />
+                            </Tooltip>
+
                         </div>
                     </div>
                 ))
