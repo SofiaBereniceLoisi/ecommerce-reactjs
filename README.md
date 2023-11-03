@@ -4,6 +4,8 @@
 ## General Information
 > Author: Sofía Berenice Loisi.
 
+> This project is an ecommerce platform where users can make purchases of products stored in a Firestore database (Firebase).
+
 > [!NOTE]
 > This project was developed using [Vite](https://vitejs.dev/).
 
@@ -20,7 +22,12 @@ npm run dev
 - CSS
 - JavaScript
 - React
-- NodeJS
+
+### Also used: 
+- Context API
+- Components
+- Firebase
+
 
 ### Dependencies Used
 - React Router Dom: ``` npm install react-router-dom ```
