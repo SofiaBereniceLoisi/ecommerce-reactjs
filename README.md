@@ -2,7 +2,7 @@
 ### Final project - React JS - CoderHouse 
 
 ## General Information
-> [!Author]: Sofía Berenice Loisi.
+> Author: Sofía Berenice Loisi.
 
 >[!NOTE]
 This project was developed using [Vite](https://vitejs.dev/).
