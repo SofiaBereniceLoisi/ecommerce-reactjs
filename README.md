@@ -3,6 +3,7 @@
 
 ## General Information
 > Author: Sofía Berenice Loisi.
+> [!NOTE]
 > This project was developed using [Vite](https://vitejs.dev/).
 
 ## Installation and Usage:
