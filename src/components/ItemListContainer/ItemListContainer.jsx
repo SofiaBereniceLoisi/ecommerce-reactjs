@@ -30,7 +30,7 @@ const ItemListContainer = ({ greeting }) => {
                 <h1>{greeting} </h1>
             </div>
             <div className='productos-contenedor'>
-                <h3>Chusmeá nuestro catálogo completo de productos</h3>
+                <h3>Chusmeá nuestro catálogo de productos</h3>
                 {products.length > 0 ? (
                     <ItemList products={products} />
                 ) : (
