@@ -6,7 +6,6 @@
 
 > This project is an ecommerce platform where users can make purchases of products stored in a Firestore database (Firebase).
 
-> [!NOTE]
 > This project was developed using [Vite](https://vitejs.dev/).
 
 ### Installation and Usage
