@@ -11,7 +11,7 @@
 ### Installation and Usage
 How to get started with the project:
 ```
-npm clone repo url
+npm clone https://github.com/SofiaBereniceLoisi/ecommerce-reactjs/tree/main
 npm install
 npm run dev
 ```
