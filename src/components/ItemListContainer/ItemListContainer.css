@@ -13,3 +13,9 @@
 .productos-contenedor{
     margin: 20px !important;
 }
+
+.spinnerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
