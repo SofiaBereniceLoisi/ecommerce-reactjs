@@ -30,5 +30,8 @@ npm run dev
 - Toastify : ``` npm i --save toastify-js ```
 - React Spinners : ``` npm i --save react-spinners ```
 
-
+##Contact
+- [Instagram](https://www.instagram.com/soffii.loisi/)
+- [LinkedIn](https://www.linkedin.com/in/sof%C3%ADaloisi/)
+- [GitHub](https://github.com/SofiaBereniceLoisi/)
 
