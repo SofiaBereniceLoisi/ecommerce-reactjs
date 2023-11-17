@@ -1,0 +1,39 @@
+.aboutPage{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aboutPage div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin-top: 5rem !important;
+}
+
+.aboutPage div h1{
+    padding: 1rem !important;
+}
+
+.btn-Contacto button{
+    margin: 10px !important;
+    background-color: #3D403A;
+    color: white;
+    padding: .5rem !important;
+    border-radius: 10rem;
+    border: 0px;
+    font-size: 0.9rem;
+    width: 50%;
+}
+
+
+.btn-Contacto button:hover{
+    background: repeating-linear-gradient(
+        45deg,#575b54 20px,#575b54 40px,#3d403a 40px,#3d403a 60px
+    );
+    cursor: pointer;
+}
