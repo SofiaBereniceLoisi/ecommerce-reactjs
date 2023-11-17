@@ -4,7 +4,7 @@ import "toastify-js/src/toastify.css";
 
 export const CartContext = createContext();
 
-const initialCart = JSON.parse(localStorage.getItem("cart"));
+const initialCart = JSON.parse(localStorage.getItem("cart")) || [];
 
 export const CartProvider = ({ children }) => {
 
@@ -24,6 +24,9 @@ export const CartProvider = ({ children }) => {
     };
 
     const quantityInCart = () => {
+        if (!cart) {
+            return 0; 
+        }
         return cart.reduce((acc, prod) => acc + prod.quantity, 0)
     }
 
